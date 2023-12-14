@@ -20,11 +20,10 @@
   </section>
 </template>
 
-<script>
-import { defineComponent } from 'vue'
+<script setup lang="ts">
+import { onMounted } from "vue";
 
-export default {
-}
+onMounted(() => {
 
   const msgerForm = get(".msger-inputarea");
   const msgerInput = get(".msger-input");
@@ -111,6 +110,7 @@ export default {
   appendMessage(PERSON_NAME, "user", "right", "very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text!");
 
   appendMessage(BOT_NAME, "bot", "left", "Right back at you very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text very long text!");
+})
 
 </script>
 
